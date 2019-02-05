@@ -5,8 +5,8 @@
   </head>
 
   <body>
-    <% if flash[:sucess] %>
-    <div class="sucess"><%= flash[:sucess] %></div>
+    <% if flash[:success] %>
+    <div class="alert alert-success" role="alert"><%= flash[:success] %></div>
     <% end %>
     <h1 class="text-danger"><center>Bienvenue <%= params[:id] %> sur notre super 🦉 plateforme de gossips...</h1><center></br>
     <a href="/gossips/new" class="btn btn-outline-danger">New</a></br></br>

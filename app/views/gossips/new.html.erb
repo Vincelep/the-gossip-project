@@ -2,7 +2,7 @@
   <body>
     <!-- ... -->
     <% if flash[:error] %>
-    <div class="error"><%= flash[:error] %></div>
+    <div class="alert alert-danger role="alert"><%= flash[:error] %></div>
     <% end %>
   
     <%= form_tag url_for(action: 'create'), method: "post" do %>
