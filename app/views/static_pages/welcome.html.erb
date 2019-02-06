@@ -15,10 +15,10 @@
       <div class="row">
         <% @gossips.each do |gossip| %>
           <div class="col-md-4">
-            <div class="card" style="width: 18rem;"><center>
-              <div class="bg-light">
+            <div class="card text-white bg-dark mb-3" style="width: 18rem;"><center>
+              <div class="card-body">
                 <div class="card-body">
-                  <h5 class="text-warning" class="card-title"><%= gossip.user.first_name %></h5>
+                  <h5 class="card-body text-info" class="card-title"><%= gossip.user.first_name %></h5>
                   <p class="card-text"><b><%= gossip.title %></b></p>
                   <a href="/static_pages/gossipdetails/<%= gossip.id %>" class="btn btn-outline-danger">Voir plus</a>
                 </div>
@@ -31,8 +31,8 @@
   </body>
 
   <footer class="page-footer font-small grey">
-    <div class="text-danger" class="footer-copyright text-center py-3">© 2019 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/" class="text-danger"> Made with ♥ by Noé & Gauthier </a>
+    <div class="text-info" class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/" class="text-info"> Made with by Nico & Vince </a>
     </div></br>
   </footer>
 
